@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form pemesanan</title>
+</head>
+<body>
+    <h1>Form Pemesanan Tiket Pesawat</h1>
+    
+    <form action="#" method="post">
+    <!--informasi penumpang-->
+    <fieldset>
+       <legend> Informasi Penumpang</legend>
+       <br>
+       <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan Nama Lengkap" required><br><br>
+   <br>
+   <label for="identitas">Nomor Identitas (KTP/Paspor):</label>
+            <input type="text" id="identitas" name="identitas" placeholder="Masukkan Nomor Identitas" required> <br>      
+   <br>
+   <label>Jenis Kelamin:</label>
+            <input type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-laki" required>
+            <label for="laki-laki">Laki-laki</label>
+            <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" required>
+            <label for="perempuan">Perempuan</label><br><br>
+    <label for="email">Alamat Email:</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan Email" required><br><br>
+            
+    <label for="telepon">Nomor Telepon:</label>
+            <input type="tel" id="telepon" name="telepon" placeholder="Masukkan Nomor Telepon" required><br><br>
+            
+    </fieldset>
+    <!--informasi penerbangan-->
+    <fieldset>
+        <legend>Informasi Penerbangan</legend>
+        
+        <label for="bandara-keberangkatan">Bandara Keberangkatan:</label>
+        <select id="bandara-keberangkatan" name="bandara_keberangkatan" required>
+            <option value="CGK">Soekarno-Hatta (CGK)</option>
+        </select><br><br>
+        
+        <label for="bandara-tujuan">Bandara Tujuan:</label>
+        <select id="bandara-tujuan" name="bandara_tujuan" required>
+            <option value="CGK">Soekarno-Hatta (CGK)</option>
+        </select><br><br>
+        
+        <label for="tgl-keberangkatan">Tanggal Keberangkatan:</label>
+        <input type="date" id="tgl-keberangkatan" name="tgl_keberangkatan" required><br><br>
+        
+        <label for="tgl-kepulangan">Tanggal Kepulangan (opsional):</label>
+        <input type="date" id="tgl-kepulangan" name="tgl_kepulangan"><br><br>
+        
+        <label for="jumlah-penumpang">Jumlah Penumpang:</label>
+        <input type="number" id="jumlah-penumpang" name="jumlah_penumpang" value="1" min="1" required><br><br>
+        
+        <label for="kelas-penerbangan">Kelas Penerbangan:</label>
+        <select id="kelas-penerbangan" name="kelas_penerbangan" required>
+            <option value="ekonomi">Ekonomi</option>
+        </select><br><br>
+    </fieldset>
+    <!--metode pembayaran-->
+    <fieldset>
+            <legend>Metode Pembayaran</legend>
+            
+            <input type="radio" id="kartu-kredit" name="metode_pembayaran" value="Kartu Kredit" required>
+            <label for="kartu-kredit">Kartu Kredit</label><br>
+            
+            <input type="radio" id="transfer-bank" name="metode_pembayaran" value="Transfer Bank" required>
+            <label for="transfer-bank">Transfer Bank</label><br>
+            
+            <input type="radio" id="e-wallet" name="metode_pembayaran" value="E-Wallet" required>
+            <label for="e-wallet">E-Wallet (GoPay, OVO, dll.)</label><br><br>
+        </fieldset>
+        
+        <button type="submit">Pesan Tiket</button>
+    </form>
+</body>
+</html>
