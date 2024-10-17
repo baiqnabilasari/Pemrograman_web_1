@@ -1,0 +1,78 @@
+/* Gaya umum */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #927284;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.tabel-harga {
+    display: flex;
+    justify-content: center;
+    background-color: #736666;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.paket {
+    margin: 0 10px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #3b3b3b;
+    border-radius: 10px;
+    width: 200px;
+    background-color: #fafafa;
+}
+
+.paket h3 {
+    color: #333;
+}
+
+.paket p {
+    font-size: 14px;
+    color: #777;
+}
+
+.harga {
+    font-size: 28px;
+    color: #333;
+    margin: 20px 0;
+}
+
+.coba-gratis {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.coba-gratis:hover {
+    background-color: #2980b9;
+}
+
+/* Gaya gambar */
+.icon {
+    width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Warna spesifik */
+.personal .harga {
+    color: #2ecc71;
+}
+
+.tim .harga {
+    color: #f39c12;
+}
+
+.enterprise .harga {
+    color: #e74c3c;
+}
